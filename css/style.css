@@ -1,0 +1,68 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background: linear-gradient(#70c5ce, #b8f0f5);
+
+    /* Keeps everything on one screen */
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Title */
+h1 {
+    margin: 12px 0 8px;
+    font-size: 32px;
+    color: white;
+    text-shadow: 3px 3px 0px black;
+}
+
+/* Level buttons */
+button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+
+    padding: 8px 18px;
+    margin: 4px;
+
+    border: 3px solid black;
+    border-radius: 10px;
+
+    background-color: white;
+    cursor: pointer;
+
+    box-shadow: 3px 3px 0px black;
+}
+
+/* Button when you hover over it */
+button:hover {
+    background-color: #ffe66d;
+    transform: translateY(-2px);
+}
+
+/* Button when clicked */
+button:active {
+    box-shadow: 1px 1px 0px black;
+    transform: translate(2px, 2px);
+}
+
+/* Game board */
+#board {
+    display: block;
+    margin: 10px auto 0;
+
+    background-image: url("../image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border: 3px solid black;
+
+    /* Makes sure the canvas fits on smaller screens */
+    max-height: calc(100vh - 125px);
+    width: auto;
+}
+
